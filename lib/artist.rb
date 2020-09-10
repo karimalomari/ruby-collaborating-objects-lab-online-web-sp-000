@@ -32,6 +32,10 @@ class Artist
     @songs << song
   end
   
+  def print_songs
+    songs.each { |song| puts song.name }
+  end
+  
   def save
     @@all << self
   end
